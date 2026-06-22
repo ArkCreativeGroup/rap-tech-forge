@@ -93,9 +93,9 @@ function About() {
       <section className="border-y border-border bg-[var(--charcoal)] py-16 md:py-24">
         <div className="container-x">
           <div className="text-center">
-            <div className="eyebrow">— What drives us</div>
+            <div className="eyebrow">— What we stand for</div>
             <h2 className="mt-4 text-balance text-3xl font-extrabold leading-[1.05] tracking-tight md:text-5xl">
-              Our mission & values
+              Our principles
             </h2>
           </div>
           <div className="mt-14 grid gap-px overflow-hidden rounded-sm bg-border md:grid-cols-2">
@@ -137,9 +137,9 @@ function About() {
         <div className="container-x">
           <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
             <div>
-              <div className="eyebrow">— Ready to scale?</div>
+              <div className="eyebrow">— Work with us</div>
               <h2 className="mt-4 max-w-3xl text-balance text-3xl font-extrabold leading-[1.05] tracking-tight md:text-5xl">
-                Let's talk about your production goals.
+                Ready to scale your print operations?
               </h2>
             </div>
             <Link to="/contact" className="btn-accent">
