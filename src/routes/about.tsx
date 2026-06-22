@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Layout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
-import { ArrowUpRight, Target, Globe, Users, Award } from "lucide-react";
+import { ArrowUpRight, ChevronRight, Target, Globe, Users, Award } from "lucide-react";
 import heroUv from "@/assets/hero-uv.jpg";
 
 export const Route = createFileRoute("/about")({
@@ -137,14 +137,24 @@ function About() {
         <div className="container-x">
           <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
             <div>
-              <div className="eyebrow">— Work with us</div>
+              <div className="text-xs font-semibold uppercase tracking-[0.25em] text-primary">
+                WORK WITH US
+              </div>
               <h2 className="mt-4 max-w-3xl text-balance text-3xl font-extrabold leading-[1.05] tracking-tight md:text-5xl">
                 Ready to scale your print operations?
               </h2>
+              <p className="mt-4 max-w-xl leading-relaxed text-muted-foreground">
+                Talk to our team about the right machine for your production volume, application, and budget.
+              </p>
             </div>
-            <Link to="/contact" className="btn-accent">
-              Contact Us <ArrowUpRight className="h-4 w-4" />
-            </Link>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <Link to="/products" className="btn-ghost">
+                VIEW PRODUCTS <ChevronRight className="h-4 w-4" />
+              </Link>
+              <Link to="/contact" className="btn-accent">
+                CONTACT US <ChevronRight className="h-4 w-4" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
