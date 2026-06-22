@@ -83,8 +83,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:title", content: "Rapeda — Industrial Print Technology" },
       { property: "og:description", content: "Industrial UV, DTF and heat press systems built for production." },
       { name: "twitter:description", content: "Industrial UV, DTF and heat press systems built for production." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d5bb0724-6831-4229-880f-e7cb0c796dc3/id-preview-ce4aee7a--0fad761d-be92-45a4-a439-788359d8aeeb.lovable.app-1779659211633.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d5bb0724-6831-4229-880f-e7cb0c796dc3/id-preview-ce4aee7a--0fad761d-be92-45a4-a439-788359d8aeeb.lovable.app-1779659211633.png" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/bab133e4-09d5-4733-8adb-454679df5f56" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/bab133e4-09d5-4733-8adb-454679df5f56" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
