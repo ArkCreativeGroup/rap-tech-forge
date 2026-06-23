@@ -177,7 +177,7 @@ export const productCatalog: Product[] = [
       { label: "Station Design", value: "Dual Platen (features two separate work platforms)" },
       { label: "Media Size / Build Area", value: "400 × 500 mm aluminum platen" },
       { label: "Production Speed", value: "0–999 sec digital cycle, 0–250 °C, manual adjustable pressure" },
-      { label: "Power Requirements", value: "1800W / 220V, single phase" },
+      { label: "Power Requirements", value: "220V (2700W)" },
       { label: "Machine Dimensions", value: "700 × 600 × 750 mm" },
       { label: "Software Compatibility", value: "Standalone digital controller — no PC required" },
     ],
