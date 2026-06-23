@@ -7,7 +7,7 @@ import uv6090s from "@/assets/rapeda-uv-6090s.png.asset.json";
 import evoA600 from "@/assets/rapeda-evo-a600.png.asset.json";
 import h4050 from "@/assets/rapeda-h4050.png.asset.json";
 
-export const Route = createFileRoute("/products")({
+export const Route = createFileRoute("/products/")({
   head: () => ({
     meta: [
       { title: "Products — Industrial Print Equipment | Rapeda" },
