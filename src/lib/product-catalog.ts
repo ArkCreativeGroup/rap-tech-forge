@@ -135,7 +135,7 @@ export const productCatalog: Product[] = [
       "Heat transfer to garment",
     ],
     gallery: [
-      { label: "T-shirts", img: appTshirt },
+      { label: "T-shirts", img: appTshirt.url },
       { label: "Tote Bags", img: appTote },
       { label: "Hoodies", img: appHoodie },
       { label: "Caps", img: appCap },
@@ -189,7 +189,7 @@ export const productCatalog: Product[] = [
       "Quality check",
     ],
     gallery: [
-      { label: "T-shirts", img: appTshirt },
+      { label: "T-shirts", img: appTshirt.url },
       { label: "Tote Bags", img: appTote },
       { label: "Mouse Pads", img: appMousepad },
       { label: "Hoodies", img: appHoodie },
