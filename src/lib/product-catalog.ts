@@ -9,7 +9,7 @@ import appAcrylic from "@/assets/app-acrylic.jpg";
 import appTshirt from "@/assets/app-tshirt.jpg";
 import appTote from "@/assets/app-tote.jpg";
 import appHoodie from "@/assets/app-hoodie.jpg";
-import appCap from "@/assets/app-cap.jpg";
+import appCap from "@/assets/app-cap-flat.jpg";
 import appBag from "@/assets/app-bag.jpg";
 import appMousepad from "@/assets/app-mousepad.jpg";
 
