@@ -173,8 +173,8 @@ export const productCatalog: Product[] = [
       { label: "Power", value: "1800W / 220V" },
     ],
     specSheet: [
-      { label: "Printhead", value: "N/A — finishing press" },
-      { label: "Ink Configuration", value: "N/A — applies pre-printed transfers" },
+      { label: "Operation Type", value: "Pneumatic (air-powered pressure)" },
+      { label: "Station Design", value: "Dual Platen (features two separate work platforms)" },
       { label: "Media Size / Build Area", value: "400 × 500 mm aluminum platen" },
       { label: "Production Speed", value: "0–999 sec digital cycle, 0–250 °C, manual adjustable pressure" },
       { label: "Power Requirements", value: "1800W / 220V, single phase" },
