@@ -6,7 +6,7 @@ import signageAsset from "@/assets/signage.png.asset.json";
 import appPackaging from "@/assets/app-packaging.jpg";
 import appTumblers from "@/assets/app-tumblers.jpg";
 import appAcrylic from "@/assets/app-acrylic.jpg";
-import appTshirt from "@/assets/app-tshirt.jpg";
+import appTshirt from "@/assets/app-tshirt.jpg.asset.json";
 import appTote from "@/assets/app-tote.jpg";
 import appHoodie from "@/assets/app-hoodie.jpg";
 import appCap from "@/assets/app-cap-flat.jpg";
@@ -135,7 +135,7 @@ export const productCatalog: Product[] = [
       "Heat transfer to garment",
     ],
     gallery: [
-      { label: "T-shirts", img: appTshirt },
+      { label: "T-shirts", img: appTshirt.url },
       { label: "Tote Bags", img: appTote },
       { label: "Hoodies", img: appHoodie },
       { label: "Caps", img: appCap },
@@ -189,7 +189,7 @@ export const productCatalog: Product[] = [
       "Quality check",
     ],
     gallery: [
-      { label: "T-shirts", img: appTshirt },
+      { label: "T-shirts", img: appTshirt.url },
       { label: "Tote Bags", img: appTote },
       { label: "Mouse Pads", img: appMousepad },
       { label: "Hoodies", img: appHoodie },
