@@ -4,7 +4,6 @@ import { Menu, X } from "lucide-react";
 import logoWhite from "@/assets/rapeda-logo-white.png";
 
 const links = [
-  { to: "/", label: "Home" },
   { to: "/products", label: "Products" },
   { to: "/supplies", label: "Supplies" },
   { to: "/about", label: "About" },
