@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ChevronRight, Zap, Target, ShieldCheck, Clock, Wrench, BookOpen, Package, ShieldAlert } from "lucide-react";
+import { ArrowLeft, ChevronRight, Zap, Target, ShieldCheck, Clock, Wrench, BookOpen, Package, ShieldAlert } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
 import {
   Accordion,
@@ -91,7 +91,14 @@ function ProductDetail() {
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/30" />
         </div>
         <div className="container-x relative py-24 md:py-36">
-          <div className="eyebrow uppercase">— {product.categoryLabel}</div>
+          <Link
+            to="/products"
+            className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground transition hover:text-foreground"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            All Products
+          </Link>
+          <div className="eyebrow mt-6 uppercase">— {product.categoryLabel}</div>
           <h1 className="mt-5 max-w-3xl font-display text-5xl font-extrabold leading-[1.02] tracking-tight md:text-7xl">
             {product.name}
           </h1>
