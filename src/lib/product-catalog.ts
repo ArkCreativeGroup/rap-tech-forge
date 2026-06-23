@@ -65,7 +65,7 @@ export const productCatalog: Product[] = [
       { label: "Cure System", value: "Water-cooled LED-UV" },
     ],
     specSheet: [
-      { label: "Printhead", value: "Epson i3200 ×4 (standard) / ×8 (high-speed)" },
+      { label: "Printhead", value: "Epson i3200-U1 ×3" },
       { label: "Ink Configuration", value: "CMYK + White + Varnish, negative-pressure circulation" },
       { label: "Media Size / Build Area", value: "600 × 900 mm print area, up to 150 mm substrate height" },
       { label: "Production Speed", value: "Up to 6 m²/hr in production mode" },
@@ -173,11 +173,11 @@ export const productCatalog: Product[] = [
       { label: "Power", value: "1800W / 220V" },
     ],
     specSheet: [
-      { label: "Printhead", value: "N/A — finishing press" },
-      { label: "Ink Configuration", value: "N/A — applies pre-printed transfers" },
+      { label: "Operation Type", value: "Pneumatic (air-powered pressure)" },
+      { label: "Station Design", value: "Dual Platen (features two separate work platforms)" },
       { label: "Media Size / Build Area", value: "400 × 500 mm aluminum platen" },
       { label: "Production Speed", value: "0–999 sec digital cycle, 0–250 °C, manual adjustable pressure" },
-      { label: "Power Requirements", value: "1800W / 220V, single phase" },
+      { label: "Power Requirements", value: "220V (2700W)" },
       { label: "Machine Dimensions", value: "700 × 600 × 750 mm" },
       { label: "Software Compatibility", value: "Standalone digital controller — no PC required" },
     ],
