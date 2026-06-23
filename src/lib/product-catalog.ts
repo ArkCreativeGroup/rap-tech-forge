@@ -65,7 +65,7 @@ export const productCatalog: Product[] = [
       { label: "Cure System", value: "Water-cooled LED-UV" },
     ],
     specSheet: [
-      { label: "Printhead", value: "Epson i3200 ×4 (standard) / ×8 (high-speed)" },
+      { label: "Printhead", value: "Epson i3200-U1 ×3" },
       { label: "Ink Configuration", value: "CMYK + White + Varnish, negative-pressure circulation" },
       { label: "Media Size / Build Area", value: "600 × 900 mm print area, up to 150 mm substrate height" },
       { label: "Production Speed", value: "Up to 6 m²/hr in production mode" },
