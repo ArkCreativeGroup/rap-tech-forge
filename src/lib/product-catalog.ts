@@ -176,7 +176,7 @@ export const productCatalog: Product[] = [
       { label: "Operation Type", value: "Pneumatic (air-powered pressure)" },
       { label: "Station Design", value: "Dual Platen (features two separate work platforms)" },
       { label: "Media Size / Build Area", value: "400 × 500 mm aluminum platen" },
-      { label: "Production Speed", value: "0–999 sec digital cycle, 0–250 °C, manual adjustable pressure" },
+      { label: "Production Speed", value: "250 garments per hour" },
       { label: "Power Requirements", value: "220V (2700W)" },
       { label: "Machine Dimensions", value: "700 × 600 × 750 mm" },
       { label: "Software Compatibility", value: "Standalone digital controller — no PC required" },
