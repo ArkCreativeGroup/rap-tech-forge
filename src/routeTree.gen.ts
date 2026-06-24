@@ -11,7 +11,6 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as WhereToBuyRouteImport } from './routes/where-to-buy'
 import { Route as SuppliesRouteImport } from './routes/supplies'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -26,11 +25,6 @@ const WhereToBuyRoute = WhereToBuyRouteImport.update({
 const SuppliesRoute = SuppliesRouteImport.update({
   id: '/supplies',
   path: '/supplies',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -63,7 +57,6 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/supplies': typeof SuppliesRoute
   '/where-to-buy': typeof WhereToBuyRoute
   '/products/$slug': typeof ProductsSlugRoute
@@ -73,7 +66,6 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/supplies': typeof SuppliesRoute
   '/where-to-buy': typeof WhereToBuyRoute
   '/products/$slug': typeof ProductsSlugRoute
@@ -84,7 +76,6 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/supplies': typeof SuppliesRoute
   '/where-to-buy': typeof WhereToBuyRoute
   '/products/$slug': typeof ProductsSlugRoute
@@ -96,7 +87,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
-    | '/sitemap.xml'
     | '/supplies'
     | '/where-to-buy'
     | '/products/$slug'
@@ -106,7 +96,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
-    | '/sitemap.xml'
     | '/supplies'
     | '/where-to-buy'
     | '/products/$slug'
@@ -116,7 +105,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
-    | '/sitemap.xml'
     | '/supplies'
     | '/where-to-buy'
     | '/products/$slug'
@@ -127,7 +115,6 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
-  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SuppliesRoute: typeof SuppliesRoute
   WhereToBuyRoute: typeof WhereToBuyRoute
   ProductsSlugRoute: typeof ProductsSlugRoute
@@ -148,13 +135,6 @@ declare module '@tanstack/react-router' {
       path: '/supplies'
       fullPath: '/supplies'
       preLoaderRoute: typeof SuppliesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -199,7 +179,6 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
-  SitemapDotxmlRoute: SitemapDotxmlRoute,
   SuppliesRoute: SuppliesRoute,
   WhereToBuyRoute: WhereToBuyRoute,
   ProductsSlugRoute: ProductsSlugRoute,
