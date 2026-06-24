@@ -24,6 +24,20 @@
     />
   </head>
   <body>
+    <form name="contact" data-netlify="true" hidden>
+      <input type="text" name="name" />
+      <input type="text" name="company" />
+      <input type="email" name="email" />
+      <input type="text" name="phone" />
+      <select name="interest">
+        <option value="UV Printing Systems">UV Printing Systems</option>
+        <option value="DTF Production Systems">DTF Production Systems</option>
+        <option value="Heat Press Equipment">Heat Press Equipment</option>
+        <option value="Supplies & Consumables">Supplies & Consumables</option>
+        <option value="Dealer Application">Dealer Application</option>
+      </select>
+      <textarea name="message"></textarea>
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
