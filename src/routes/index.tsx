@@ -13,19 +13,19 @@ import {
 } from "lucide-react";
 import heroUv from "@/assets/hero-uv.jpg";
 import catUv from "@/assets/cat-uv.jpg";
-import uv6090s from "@/assets/rapeda-uv-6090s.png.asset.json";
+import uv6090s from "@/assets/rapeda-uv-6090s.png";
 
-import evoA600 from "@/assets/rapeda-evo-a600.png.asset.json";
+import evoA600 from "@/assets/rapeda-evo-a600.png";
 
-import h4050 from "@/assets/rapeda-h4050.png.asset.json";
+import h4050 from "@/assets/rapeda-h4050.png";
 import appApparel from "@/assets/app-apparel.jpg";
-import appPromotional from "@/assets/promotional-products.png.asset.json";
+import appPromotional from "@/assets/promotional-products.png";
 import appTumblers from "@/assets/app-tumblers.jpg";
 import appAcrylic from "@/assets/app-acrylic.jpg";
 import appPhone from "@/assets/app-phone.jpg";
 import appPackaging from "@/assets/app-packaging.jpg";
 import appLeather from "@/assets/app-leather.jpg";
-import appSignage from "@/assets/signage.png.asset.json";
+import appSignage from "@/assets/signage.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -140,7 +140,7 @@ function TrustBar() {
 
 const categories = [
   {
-    img: uv6090s.url,
+    img: uv6090s,
     eyebrow: "01 — UV Systems",
     title: "UV Printing Systems",
     copy: "Create premium prints on rigid and specialty materials including acrylic, wood, leather, packaging, glass and promotional products.",
@@ -148,7 +148,7 @@ const categories = [
     cta: "Explore UV Printers",
   },
   {
-    img: evoA600.url,
+    img: evoA600,
     eyebrow: "02 — DTF Systems",
     title: "DTF Production Systems",
     copy: "High-speed direct-to-film production systems designed for vibrant color, wash durability and scalable garment decoration workflows.",
@@ -156,7 +156,7 @@ const categories = [
     cta: "Explore DTF Systems",
   },
   {
-    img: h4050.url,
+    img: h4050,
     eyebrow: "03 — Heat Press",
     title: "Heat Press Equipment",
     copy: "Reliable heat transfer equipment engineered for consistent pressure, accurate temperature control and efficient production performance.",
@@ -305,8 +305,8 @@ const apps = [
   { img: appPhone, label: "Phone Cases" },
   { img: appPackaging, label: "Packaging" },
   { img: appLeather, label: "Leather Products" },
-  { img: appPromotional.url, label: "Promotional Products" },
-  { img: appSignage.url, label: "Signage" },
+  { img: appPromotional, label: "Promotional Products" },
+  { img: appSignage, label: "Signage" },
 ];
 
 function Applications() {
@@ -355,21 +355,21 @@ function Applications() {
 
 const machines = [
   {
-    img: uv6090s.url,
+    img: uv6090s,
     name: "Rapeda UV-6090s",
     cat: "UV Flatbed",
     desc: "Industrial UV flatbed printer for rigid substrate printing and premium promotional product production.",
     feats: ["Epson i3200 heads", "White + varnish", "Industrial vacuum platform", "High-speed production"],
   },
   {
-    img: evoA600.url,
+    img: evoA600,
     name: "Rapeda EVO A-600",
     cat: "DTF Production",
     desc: "Professional DTF production system engineered for high-volume garment decoration.",
     feats: ["Automatic powder shaker", "High-speed output", "Vibrant textile color", "Workflow design"],
   },
   {
-    img: h4050.url,
+    img: h4050,
     name: "Rapeda H4050",
     cat: "Heat Transfer",
     desc: "Heavy-duty heat transfer system designed for consistent industrial transfer application.",

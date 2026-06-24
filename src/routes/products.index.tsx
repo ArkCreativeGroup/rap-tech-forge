@@ -3,9 +3,9 @@ import { useState } from "react";
 import { Layout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { ArrowUpRight } from "lucide-react";
-import uv6090s from "@/assets/rapeda-uv-6090s.png.asset.json";
-import evoA600 from "@/assets/rapeda-evo-a600.png.asset.json";
-import h4050 from "@/assets/rapeda-h4050.png.asset.json";
+import uv6090s from "@/assets/rapeda-uv-6090s.png";
+import evoA600 from "@/assets/rapeda-evo-a600.png";
+import h4050 from "@/assets/rapeda-h4050.png";
 
 export const Route = createFileRoute("/products/")({
   head: () => ({
@@ -39,7 +39,7 @@ const products: {
     slug: "rapeda-uv-6090s",
     name: "Rapeda UV-6090s",
     cat: "UV Printers",
-    img: uv6090s.url,
+    img: uv6090s,
     desc: "Industrial UV flatbed printer for acrylic, packaging, leather and promotional product printing.",
     features: ["Epson i3200", "White + varnish", "Vacuum table", "High-speed output"],
     apps: ["acrylic", "tumblers", "corporate gifts", "signage"],
@@ -48,7 +48,7 @@ const products: {
     slug: "rapeda-evo-a600",
     name: "Rapeda EVO A-600",
     cat: "DTF Systems",
-    img: evoA600.url,
+    img: evoA600,
     desc: "Professional DTF production system engineered for high-volume garment decoration.",
     features: ["Auto powder shaker", "High-speed", "Vibrant color", "Workflow design"],
     apps: ["apparel", "merchandise", "events"],
@@ -57,7 +57,7 @@ const products: {
     slug: "rapeda-h4050",
     name: "Rapeda H4050",
     cat: "Heat Presses",
-    img: h4050.url,
+    img: h4050,
     desc: "Heavy-duty heat transfer system designed for consistent industrial transfer application.",
     features: ["Digital controls", "Uniform heating", "Pressure precision", "Industrial build"],
     apps: ["apparel", "transfers"],
