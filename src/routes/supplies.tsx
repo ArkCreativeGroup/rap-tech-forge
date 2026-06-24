@@ -75,9 +75,12 @@ function Supplies() {
                 />
                 <h3 className="mt-8 font-display text-2xl font-bold tracking-tight">{s.name}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.desc}</p>
-                <div className="mt-8 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary opacity-0 transition-opacity group-hover:opacity-100">
+                <Link
+                  to="/contact"
+                  className="mt-8 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary opacity-0 transition-opacity group-hover:opacity-100"
+                >
                   Request supply <ArrowUpRight className="h-3.5 w-3.5" />
-                </div>
+                </Link>
               </div>
             ))}
             <div className="bg-[var(--gradient-uv)] p-8">
