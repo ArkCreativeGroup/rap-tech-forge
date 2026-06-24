@@ -1,12 +1,12 @@
-import uv6090s from "@/assets/rapeda-uv-6090s.png.asset.json";
-import evoA600 from "@/assets/rapeda-evo-a600.png.asset.json";
-import h4050 from "@/assets/rapeda-h4050.png.asset.json";
-import promoProducts from "@/assets/promotional-products.png.asset.json";
-import signageAsset from "@/assets/signage.png.asset.json";
+import uv6090s from "@/assets/rapeda-uv-6090s.png";
+import evoA600 from "@/assets/rapeda-evo-a600.png";
+import h4050 from "@/assets/rapeda-h4050.png";
+import promoProducts from "@/assets/promotional-products.png";
+import signageAsset from "@/assets/signage.png";
 import appPackaging from "@/assets/app-packaging.jpg";
 import appTumblers from "@/assets/app-tumblers.jpg";
 import appAcrylic from "@/assets/app-acrylic.jpg";
-import appTshirt from "@/assets/app-tshirt.jpg.asset.json";
+import appTshirt from "@/assets/app-tshirt.jpg";
 import appTote from "@/assets/app-tote.jpg";
 import appHoodie from "@/assets/app-hoodie.jpg";
 import appCap from "@/assets/app-cap-flat.jpg";
@@ -42,7 +42,7 @@ export const productCatalog: Product[] = [
     name: "Rapeda UV-6090s",
     cat: "UV Printers",
     categoryLabel: "UV Printer",
-    img: uv6090s.url,
+    img: uv6090s,
     tagline: "Industrial UV flatbed printer for acrylic, packaging, leather and promotional product printing.",
     desc: "Industrial UV flatbed printer for acrylic, packaging, leather and promotional product printing.",
     longDesc:
@@ -81,8 +81,8 @@ export const productCatalog: Product[] = [
       "Deliver",
     ],
     gallery: [
-      { label: "Promotional Products", img: promoProducts.url },
-      { label: "Signage", img: signageAsset.url },
+      { label: "Promotional Products", img: promoProducts },
+      { label: "Signage", img: signageAsset },
       { label: "Packaging", img: appPackaging },
       { label: "Tumblers", img: appTumblers },
       { label: "Acrylic Products", img: appAcrylic },
@@ -98,7 +98,7 @@ export const productCatalog: Product[] = [
     name: "Rapeda EVO-A600",
     cat: "DTF Systems",
     categoryLabel: "DTF System",
-    img: evoA600.url,
+    img: evoA600,
     tagline: "Professional DTF production system engineered for high-volume garment decoration.",
     desc: "Professional DTF production system engineered for high-volume garment decoration.",
     longDesc:
@@ -135,7 +135,7 @@ export const productCatalog: Product[] = [
       "Heat transfer to garment",
     ],
     gallery: [
-      { label: "T-shirts", img: appTshirt.url },
+      { label: "T-shirts", img: appTshirt },
       { label: "Tote Bags", img: appTote },
       { label: "Hoodies", img: appHoodie },
       { label: "Caps", img: appCap },
@@ -152,7 +152,7 @@ export const productCatalog: Product[] = [
     name: "Rapeda H4050",
     cat: "Heat Presses",
     categoryLabel: "Heat Press",
-    img: h4050.url,
+    img: h4050,
     tagline: "Heavy-duty heat transfer system designed for consistent industrial transfer application.",
     desc: "Heavy-duty heat transfer system designed for consistent industrial transfer application.",
     longDesc:
@@ -189,7 +189,7 @@ export const productCatalog: Product[] = [
       "Quality check",
     ],
     gallery: [
-      { label: "T-shirts", img: appTshirt.url },
+      { label: "T-shirts", img: appTshirt },
       { label: "Tote Bags", img: appTote },
       { label: "Mouse Pads", img: appMousepad },
       { label: "Hoodies", img: appHoodie },
