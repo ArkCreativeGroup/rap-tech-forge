@@ -47,6 +47,8 @@ function Contact() {
                 </div>
               ) : (
                 <form
+                  name="contact"
+                  data-netlify="true"
                   className="mt-8 grid gap-5"
                   onSubmit={(e) => {
                     e.preventDefault();
