@@ -55,6 +55,7 @@ function Contact() {
                     setSent(true);
                   }}
                 >
+                  <input type="hidden" name="form-name" value="contact" />
                   <div className="grid gap-5 md:grid-cols-2">
                     <Field label="Full Name" name="name" required />
                     <Field label="Company" name="company" />
