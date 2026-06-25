@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { Layout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { Mail, Phone, MapPin, ArrowUpRight, Wrench, ShieldCheck, Headphones } from "lucide-react";
@@ -23,6 +23,34 @@ export const Route = createFileRoute("/contact")({
 
 function Contact() {
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setSubmitting(true);
+    setError("");
+
+    const formData = new FormData(event.currentTarget);
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      setSent(true);
+    } catch {
+      setError("Something went wrong. Please try again or email sales@rapeda.com.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
   return (
     <Layout>
@@ -49,11 +77,9 @@ function Contact() {
                 <form
                   name="contact"
                   data-netlify="true"
+                  method="POST"
                   className="mt-8 grid gap-5"
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    setSent(true);
-                  }}
+                  onSubmit={handleSubmit}
                 >
                   <input type="hidden" name="form-name" value="contact" />
                   <div className="grid gap-5 md:grid-cols-2">
@@ -67,6 +93,7 @@ function Contact() {
                       Interest
                     </label>
                     <select
+                      name="interest"
                       className="mt-2 w-full rounded-sm border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary"
                       defaultValue=""
                     >
@@ -83,13 +110,15 @@ function Contact() {
                       Message
                     </label>
                     <textarea
+                      name="message"
                       rows={5}
                       className="mt-2 w-full rounded-sm border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary"
                       placeholder="Tell us about your production needs..."
                     />
                   </div>
-                  <button type="submit" className="btn-accent w-fit">
-                    Send Message <ArrowUpRight className="h-4 w-4" />
+                  {error ? <div className="text-sm text-destructive">{error}</div> : null}
+                  <button type="submit" className="btn-accent w-fit" disabled={submitting}>
+                    {submitting ? "Sending..." : "Send Message"} <ArrowUpRight className="h-4 w-4" />
                   </button>
                 </form>
               )}
